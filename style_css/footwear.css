@@ -1,0 +1,201 @@
+/* container */
+
+.container {
+    text-align: center;
+}
+
+.container h4 {
+    text-align: left;
+    padding-left: 10%;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+    font-weight: bold;
+    color:#7c7c7c ;
+}
+
+.container-head-filter {
+    overflow: auto;
+}
+
+.container-head-filter:hover span{
+    color: orangered;
+    transition:  0.5s all;
+    cursor: pointer;
+}
+
+.container-head-filter span {
+    float: right;
+    padding-right: 10%;
+    font-size: 23px;
+    color: #262626;
+}
+
+.container-head-filter a {
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    font-size: 15px;
+}
+.row-content {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-content {
+    width: 33.33%;
+}
+
+.col-content a{
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+    display: block;
+    font-size: 12px;
+}
+
+.col-content h5 {
+    color: #7c7c7c;
+}
+
+.more {
+    
+    display: inline-block;
+    font-size: 15px;
+    padding: 10px 30px 10px;
+    margin-bottom: 30px;
+    background: #000;
+}
+
+.more p {
+    color: #008489;
+    margin: 0;
+    cursor: pointer;
+}
+
+/* filter css */
+.head-filter {
+    text-align: center;
+}
+
+#close-filter-button {
+    float: right;
+    cursor: pointer;
+    padding: 3px 6px;
+}
+
+#close-filter-button:hover {
+    color: orangered;
+    transition:  ease-in ;
+    border: dashed 0.5px orangered;
+}
+
+#filter-side {
+    position: fixed;
+    z-index:2;
+    right:0;
+    top: 99px;
+    width: 400px;
+    height: 97.4%;
+    background-color: white;
+    display: none;
+}
+
+#filter-side>ul {
+    padding:30px;
+}
+
+.filter-content {
+    margin-top: 30px;
+}
+
+.filter-content li:hover {
+    background-color: rgba(0, 0, 0, 0.010);
+}
+
+.filter-content li {
+    padding: 20px;
+    border-bottom: 1px solid #e0d4d4;
+}
+
+.filter-content span{
+    float: right;
+}
+
+.filter-content li {
+     cursor: pointer;
+}
+
+/* bên trong menu filter */
+
+.fil-brands{
+    clear: both;
+    height: 500px;
+    display: none;
+    font-family: 'Cabin', sans-serif;
+   
+}
+
+.fil-row {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.fil-col {
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+.fil-col p {
+    cursor: pointer;
+}
+
+.fil-col p:hover {
+    color: orangered;
+    transition: ease 0.5s all;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes sidefilter-right {
+    from {
+        right: -400px;
+    }
+    to {
+        right:0 ;
+    }
+}
+
+@keyframes sidefilter-left {
+    from {
+        right: 0;
+    }
+    to {
+        right:-400px ;
+    }
+}
+

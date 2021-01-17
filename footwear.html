@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_css/footwear.css">
+    <link rel="stylesheet" href="style_css/default.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>G-LAB: NỀN TẢNG MUA BÁN KÝ GỬI SNEAKER, STREETWEAR - GLAB.VN</title>
+</head>
+
+<body>
+    <div class="side-search-right">
+
+        <div class="input">
+            <ul>
+                <li>
+                    <div class="close-search">
+                        <p id='close-search-button' onclick="closeBtn()">X</p>
+                    </div>
+                </li>
+                <li class="search-submit-top">
+                    <input type="text" placeholder="Search" onkeyup="filterSearch()" id="search-input">
+                    <span><i class="fa fa-arrow-left"></i></span>
+                </li>
+            </ul>
+            <ul id="show-products-search">
+                <!-- List Search -->
+            </ul>
+
+        </div>
+    </div>
+    <div class="sticky-menu">
+        <div id="logo-icon">
+            <a href="index.html"> <img src="image/logo-glab.svg" alt=""></a>
+
+            <div id="icon-shopping">
+                <span>
+                    <i class="fa fa-user-circle"></i>
+                </span>
+                <span class="search-product"><i class="fa fa-search" onclick="sidesearch()"></i></span>
+                <span><i class="fa fa-shopping-cart"></i></span>
+
+            </div>
+
+        </div>
+        <nav>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a class="sub-nav" href="">FOOTWEAR</a>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="">Newest Sneakers</a>
+                                    <a href="">Basketball</a></li>
+                                <li><a href="">Lifestyle</a>
+                                    <a href="">Gym & Training</a></li>
+                                <li><a href="">Running</a>
+                                    <a href="">Sandal</a> </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li> <a class="sub-nav" href="">APPAREL</a>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="">CONIC®</a>
+                                    <a href="">Outerwears</a>
+                                    <a href="">Shirts</a>
+                                    <a href="">Long Sleeves</a></li>
+                                <li><a href="">Hoodies</a>
+                                    <a href="">Tees</a>
+                                    <a href="">Jackets</a>
+                                    <a href="">
+                                        <pre> </pre>
+                                    </a></li>
+                                <li><a href="">Shorts</a>
+                                    <a href="">Pants</a>
+                                    <a href="">Sweaters</a>
+                                    <a href="">
+                                        <pre> </pre>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="sub-nav" href="">ACCESSORIES</a>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="">Watch</a>
+                                    <a href="">Backpack And Bag</a>
+                                    <a href="">Cap</a></li>
+                                <li><a href="">Socks</a>
+                                    <a href="">Shoe Care</a>
+                                    <a href="">Miscellaneous</a></li>
+                                <li><a href="">Running</a>
+                                    <a href="">Bearbrick</a>
+                                    <a href="">Face Mask</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="sub-nav" href="">USED</a>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="">Newest Sneakers</a>
+                                    <a href="">Basketball</a></li>
+                                <li><a href="">Lifestyle</a>
+                                    <a href="">Gym & Training</a></li>
+                                <li><a href="">Running</a>
+                                    <a href="">Sandal</a> </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- filter-side-->
+    <section id="filter-side">
+        <ul>
+            <li>
+                <div class="head-filter">
+                    <span class="logo-filter"><i class="fa fa-filter"></i> Filter</span>
+                    <span id='close-filter-button' onclick="closeFilter()"> X </span>
+                </div>
+            </li>
+            <li>
+                <ul class="filter-content">
+                    <li id='brand-filter' onclick="showItemfilter()">Brand <span>+</span>
+                    </li>
+                    <div class="fil-brands">
+                        <!-- <div class="fil-row">
+                                <div class="fil-col">
+                                    <p>addidas</p>
+                                </div>
+                            </div> -->
+                    </div>
+                    <li>Subcategory<span>+</span></li>
+                    <li>Sizes<span>+</span></li>
+                    <li>Price<span>+</span></li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section id='product-foot-wear'>
+        <div class="container">
+            <div class="container-head-filter">
+                <h4>Product: FootWear </h4>
+                <span id='icon-filter' onclick="openFilter()"><i class="fa fa-filter"></i><a> Filter</a></span>
+            </div>
+
+            <p class="keyword" style="display: none;">footwear</p>
+            <div class="row-content">
+                <!-- <div class="col-content">
+                    <img src="image/air-jd1.jpg">
+                    <a>NIKE REACT PRESTO UNDERCOVER BLACK</a>
+                    <h5>đ 13,800,000</h5>
+                </div> -->
+            </div>
+            <div class="more" onclick="countmodel()">
+                <p class="show-more">See More</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="big-footer">
+            <div class="logo-bottom">
+                <a href=""> <img src="image/logo-glab.svg" alt=""></a>
+            </div>
+            <div class="input-bottom">
+                <input type="text" placeholder="Sign in " name="" id="">
+                <span class="submit"><i class="fa fa-arrow-left"></i></span>
+            </div>
+            <div class="row-info-bottom">
+                <div class="col-info-bottom"></div>
+                <div class="col-info-bottom"></div>
+                <div class="col-info-bottom"></div>
+            </div>
+        </div>
+        <div class="row-info-bottom">
+            <div class="col-info-bottom">
+                <div class="col-bottom-center">
+                    <h4>Service & Support</h4>
+                    <a>glabvn@gmail.com</a>
+                    <a>+84945378809</a>
+                    <a>Locations</a>
+                </div>
+
+            </div>
+            <div class="col-info-bottom">
+                <div class="col-bottom-center">
+                    <h4>Info</h4>
+                    <a>Consignment Terms</a>
+                    <a href="contrac.html">Connect with Us</a>
+                    <a>Delivery and Returns</a>
+                    <a>FAQs</a>
+                </div>
+
+            </div>
+            <div class="col-info-bottom ">
+                <div class="col-bottom-center">
+                    <h4>Follow Us</h4>
+                    <a>Facebook</a>
+                    <a>Instagram</a>
+                    <a>Youtube</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="copyright">
+            Copyright &copy;2018 GLAB.VN
+        </div>
+    </footer>
+    <script src="js-file/home.js"></script>
+    <script src="js-file/loadmodel.js"></script>
+    <!-- <script src="js-file/loaddata.js"></script> -->
+</body>
+
+</html>
